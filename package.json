@@ -1,0 +1,29 @@
+{
+  "name": "blockerbet",
+  "version": "1.0.0",
+  "description": "Extensão para bloquear sites de apostas",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "webextension-polyfill": "^0.6.0",
+    "webpack": "^5.0.0",
+    "webpack-cli": "^4.0.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
+  "main": "background.js",
+  "browser": {
+    "webextension": {
+      "background": "background.js",
+      "contentScripts": {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    }
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "author": "Alex Oliveira",
+  "license": "MIT"
+}
