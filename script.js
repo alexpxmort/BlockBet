@@ -1,18 +1,18 @@
 
 var blocked_sites = [
-    "https://pixbet.com/",
-    "https://m.esportesdasorte.com/",
-    "https://br.betano.com/",
-    "https://promo.sportingbet.com/",
-    "https://www.bet365.com/" ,
-    "https://lp.superbet.com/",
-    "https://promotions.betfair.com/",
-    "https://blaze-4.com/pt/",
-    "https://m.mmabet.com/",
-    "https://segenx.com/",
-    "https://bet-real.com/",
-    "https://subwaycash.com/",
-    "https://www.subway-cash.com/"
+    "https://pixbet.com/*",
+    "https://m.esportesdasorte.com/*",
+    "https://br.betano.com/*",
+    "https://promo.sportingbet.com/*",
+    "https://www.bet365.com/*" ,
+    "https://lp.superbet.com/*",
+    "https://promotions.betfair.com/*",
+    "https://blaze-4.com/pt/*",
+    "https://m.mmabet.com/*",
+    "https://segenx.com/*",
+    "https://bet-real.com/*",
+    "https://subwaycash.com/*",
+    "https://www.subway-cash.com/*"
   ]
   
 
