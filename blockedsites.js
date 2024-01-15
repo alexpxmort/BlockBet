@@ -7,5 +7,8 @@ var blocked_sites_v2 = [
   "https://lp.superbet.com",
   "https://promotions.betfair.com",
   "https://blaze-4.com/pt/",
-  "https://m.mmabet.com/"
+  "https://m.mmabet.com/",
+  "https://segenx.com/",
+  "https://bet-real.com",
+  "https://subwaycash.com"
 ]
