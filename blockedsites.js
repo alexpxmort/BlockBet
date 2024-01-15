@@ -6,6 +6,6 @@ var blocked_sites_v2 = [
   "https://www.bet365.com" 
   "https://lp.superbet.com",
   "https://promotions.betfair.com",
-  "https://blaze-4.com/pt/"
-  
+  "https://blaze-4.com/pt/",
+  "https://m.mmabet.com/"
 ]
