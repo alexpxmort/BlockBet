@@ -1,6 +1,6 @@
 {
   "name": "BlockBet", 
-  "description": "Blocks website bet",
+  "description": "Um bloqueador de sites de apostas",
   "manifest_version": 2,
   "version": "1.0", 
   "background": {
