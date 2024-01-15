@@ -11,24 +11,25 @@ var blocked_sites = [
     "https://m.mmabet.com/",
     "https://segenx.com/",
     "https://bet-real.com/",
-    "https://subwaycash.com/"
+    "https://subwaycash.com/",
+    "https://www.subway-cash.com/"
   ]
   
 
 
-  function blockSite() {
-    const redirectUrl = browser.runtime.getURL("index.html") || chrome.runtime.getURL("index.html");
-    return { redirectUrl };
+  function blockSite(details, tabsUpdate) {
+    tabsUpdate(null, {url: "https://jogadoresanonimos.com.br/"});
+    return {cancel: true};
 }
 if (typeof chrome !== "undefined" && chrome.webRequest) {
     chrome.webRequest.onBeforeRequest.addListener(
-        details => blockSite(),
+        details => blockSite(details, chrome.tabs.update),
         {urls: blocked_sites},
         ["blocking"]
     );
 } else if (typeof browser !== "undefined" && browser.webRequest) {
     browser.webRequest.onBeforeRequest.addListener(
-        details => blockSite(),
+        details => blockSite(details, browser.tabs.update),
         {urls: blocked_sites},
         ["blocking"]
     );

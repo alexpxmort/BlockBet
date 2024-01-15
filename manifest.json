@@ -9,5 +9,5 @@
   "icons": {
       "48"   : "icon.gif"
   },
-  "permissions": ["webNavigation","webRequest", "webRequestBlocking", "http://*/", "https://*/"]
+  "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"]
 }
