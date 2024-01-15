@@ -1,13 +1,13 @@
 {
   "name": "BlockBet", 
-  "description": "Um bloqueador de sites de apostas",
+  "description": "Um bloqueador de sites de apostas feito por Alex Oliveira",
   "manifest_version": 2,
   "version": "1.0", 
   "background": {
-      "scripts": ["blockedsites.js", "script.js"]
+      "scripts": [ "script.js"]
   },
   "icons": {
       "48"   : "icon.gif"
   },
-  "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"]
+  "permissions": ["webNavigation","webRequest", "webRequestBlocking", "http://*/", "https://*/"]
 }

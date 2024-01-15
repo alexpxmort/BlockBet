@@ -1,19 +1,35 @@
-function blockSite(details, tabsUpdate) {
-    console.log("I am going to block:", details.url);
-    tabsUpdate(null, {url: "https://api.whatsapp.com/send?phone=+5511995716942&text=Ola+preciso+de+ajuda%2Cacabei+de+acessar+um+site+de+apostas+%21"});
-    return {cancel: true};
-}
 
+var blocked_sites = [
+    "https://pixbet.com/",
+    "https://m.esportesdasorte.com/",
+    "https://br.betano.com/",
+    "https://promo.sportingbet.com/",
+    "https://www.bet365.com/" ,
+    "https://lp.superbet.com/",
+    "https://promotions.betfair.com/",
+    "https://blaze-4.com/pt/",
+    "https://m.mmabet.com/",
+    "https://segenx.com/",
+    "https://bet-real.com/",
+    "https://subwaycash.com/"
+  ]
+  
+
+
+  function blockSite() {
+    const redirectUrl = browser.runtime.getURL("index.html") || chrome.runtime.getURL("index.html");
+    return { redirectUrl };
+}
 if (typeof chrome !== "undefined" && chrome.webRequest) {
     chrome.webRequest.onBeforeRequest.addListener(
-        details => blockSite(details, chrome.tabs.update),
-        {urls: blocked_sites_v2},
+        details => blockSite(),
+        {urls: blocked_sites},
         ["blocking"]
     );
 } else if (typeof browser !== "undefined" && browser.webRequest) {
     browser.webRequest.onBeforeRequest.addListener(
-        details => blockSite(details, browser.tabs.update),
-        {urls: blocked_sites_v2},
+        details => blockSite(),
+        {urls: blocked_sites},
         ["blocking"]
     );
 }
