@@ -7,7 +7,7 @@
       "scripts": ["blockedsites.js", "script.js"]
   },
   "icons": {
-      "48"   : "icon.png"
+      "48"   : "Leonardo_Diffusion_XL_create_a_image_logo_to_my_browser_extens_3 (1).jpg"
   },
   "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"]
 }
